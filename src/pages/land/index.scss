@@ -1,0 +1,84 @@
+.mae {
+ 
+.banner_conteiner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 145vh;
+    }
+
+   
+}
+
+.ofertas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+
+    .botoes_de_ofertas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+       
+
+        .Ver_ofertas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            background-color: black;
+            border-radius: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            width: 20vh;
+            height: 5vh;
+            
+    
+            &:hover {
+                background-color: #4C4C4C;
+            }
+        }
+
+        .Saiba_Mais {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            background-color: black;
+            border-radius: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            width: 14vh;
+            height: 5vh;
+            
+    
+            &:hover {
+                background-color: #4C4C4C;
+            }
+        }
+
+        
+    }
+
+}
+
+.Melhores_Ofertas {
+    display: flex;
+    justify-content: start;
+    padding-left: 30vh;
+
+    .ofertas_renderizadas {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+}

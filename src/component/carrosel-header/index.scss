@@ -1,0 +1,66 @@
+//* {
+//    border : 1px solid rgb(0, 255, 42);
+//}
+
+.carrosel {
+
+    
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        
+      color: black;
+      height: 50px; /* Tamanho do botão */
+      width: 50px; /* Largura do botão */
+      
+      &:hover {
+        color: #484848;
+      }
+    }
+    
+    .swiper-button-next::after, 
+    .swiper-button-prev::after {
+      font-size: 20px; 
+    }
+
+    .swiper-slide-content{
+        display: flex;
+        flex-direction: row; 
+        gap: 10px;
+        align-items: flex-start;
+
+        span {
+            display: flex;
+            flex-direction: row; 
+            gap: 10px;
+            align-items: flex-start;
+            font-weight: bold;
+
+        }
+
+ 
+    }
+    
+     .swiper-slide {
+        background-color: #F3F3F3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 5vh;
+
+    
+
+        a {
+            color: #484848;
+        }
+     }
+
+}
+
