@@ -1,0 +1,46 @@
+.produtos-lancamentos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+ 
+    .img_produto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        padding-top: 10vh;
+        
+         img {
+         width: 154vh;
+         }
+     }
+
+     .ir_produto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    
+        .botao1, .botao2, .botao3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            background-color: black;
+            border-radius: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            width: 20vh;
+            height: 5vh;
+            border: none;
+            
+    
+            &:hover {
+                background-color: #4C4C4C;
+            }
+        }
+     }
+}
+

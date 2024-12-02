@@ -1,4 +1,10 @@
 .mae {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
  
 .banner_conteiner {
 
@@ -7,7 +13,7 @@
     align-items: center;
 
     img {
-        width: 145vh;
+        width: 154vh;
     }
 
    
@@ -73,12 +79,25 @@
 .Melhores_Ofertas {
     display: flex;
     justify-content: start;
-    padding-left: 30vh;
+    flex-direction: column;
+   
+    gap: 2vh;
 
-    .ofertas_renderizadas {
+    .ofertas_disponiveis {
         display: flex;
-        flex-direction: column;
+        justify-content: start;
+        flex-direction: row;
+        gap: 2vh;
     }
+
+    .ofertas_renderizadas{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
 }
+
+
 
 }

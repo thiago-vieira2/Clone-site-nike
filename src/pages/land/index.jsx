@@ -2,8 +2,33 @@ import './index.scss'
 import Black from '../../assets/bannerblack.jpg'
 import Ofertas from '../../component/ofertas';
 import { useState } from 'react';
+import Chuteira from '../../assets/produtos/download.png'
+import Produtos_lancamentos from '../../component/produtos_lancamento';
+import Fitness_product from '../../assets/produtos/download1.avif'
 
 export default function Land() {
+
+    //img_produto,titulo_produto, texto_produto,sub_produto, texto_botao,texto_botao2,texto_botao3
+
+    const  [lancamentos, setLancamentos] = useState([
+        {
+            id: 1,
+            img_produto: Chuteira,
+            titulo_produto: 'Mercurial Cosmic  Speed',
+            sub_produto : 'Mais velocidade , mais estilo',
+            texto_botao : 'Ver Lançamento',
+        },
+
+        {
+            id: 2,
+            img_produto: Fitness_product,
+            titulo_produto: 'Mercurial Cosmic  Speed',
+            sub_produto : 'Mais velocidade , mais estilo',
+            texto_botao : 'Ver Lançamento',
+            texto_botao2 : 'Free Metcon 6',
+            texto_botao3: 'Saiba Mais'
+        }
+    ])
 
 
     const [ofertass, setOfertass] = useState([
@@ -54,6 +79,8 @@ export default function Land() {
             <div className="Melhores_Ofertas">
                 <h1> Melhores Ofertas</h1>
 
+                <div className="ofertas_disponiveis">
+
                 {ofertass.map ((item,index) => {
 
                     return (
@@ -66,7 +93,21 @@ export default function Land() {
 
                 })}
 
+                </div>
 
+
+            </div>
+
+            <div className="produtos_lancamentos">
+                <div className="produto_em_si">
+                    {lancamentos.map ((item,index) => {
+                        return (
+                            <div className="lancamentoproduto">
+                                <Produtos_lancamentos key={item.id} img_produto={item.img_produto} texto_botao={item.texto_botao} texto_botao2={item.texto_botao2} texto_botao3={item.texto_botao3}/>
+                            </div>
+                        );
+                    })}
+                </div>  
             </div>
 
         </div>
